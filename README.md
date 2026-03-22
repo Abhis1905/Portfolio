@@ -2,7 +2,7 @@
 
 [![Portfolio](https://img.shields.io/badge/🚀-Portfolio-FF6B2B?style=for-the-badge&labelColor=0D0D0F&color=FF6B2B)](https://1905-abhishek.netlify.app)
 
-# Abhishek Kumar — Portfolio
+# Abhishek's — Portfolio
 
 **Personal portfolio built with React 18 + Tailwind CSS**
 
