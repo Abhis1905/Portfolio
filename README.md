@@ -1,34 +1,35 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF6B2B&height=120&section=header&text=Abhishek%20Kumar&fontSize=40&fontColor=ffffff&fontAlignY=35&desc=Full%20Stack%20%2B%20ML%20Engineer&descAlignY=60&descSize=16" width="100%"/>
+[![Portfolio](https://img.shields.io/badge/🚀-Portfolio-FF6B2B?style=for-the-badge&labelColor=0D0D0F&color=FF6B2B)](https://1905-abhishek.netlify.app)
 
-<br/>
+# Abhishek Kumar — Portfolio
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=FF6B2B&center=true&vCenter=true&width=500&lines=Backend+Engineer+%7C+Java+%2B+Spring+Boot;ML+Engineer+%7C+Python+%2B+scikit-learn;Full+Stack+Developer+%7C+React+%2B+Flask;Open+Source+%7C+MIT+Licensed+Projects;DSA+Grinder+%7C+51+Solved+%7C+17+Hard)](https://git.io/typing-svg)
+**Personal portfolio built with React 18 + Tailwind CSS**
 
-<br/>
+*Bold. Fast. Production-grade.*
 
-[![Live](https://img.shields.io/badge/🌐%20Live%20Portfolio-1905--abhishek.netlify.app-FF6B2B?style=for-the-badge&labelColor=0D0D0F)](https://1905-abhishek.netlify.app)
-
-<br/>
+[![Live](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1000&color=FF6B2B&center=true&vCenter=true&width=280&lines=🌐+View+Live+Portfolio+→)](https://1905-abhishek.netlify.app)
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=61DAFB&labelColor=0D0D0F)](https://reactjs.org)
 [![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38BDF8?style=flat-square&logo=tailwindcss&logoColor=38BDF8&labelColor=0D0D0F)](https://tailwindcss.com)
 [![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=flat-square&logo=netlify&logoColor=white&labelColor=0D0D0F)](https://netlify.com)
-[![Web3Forms](https://img.shields.io/badge/Web3Forms-Contact-FF6B2B?style=flat-square&labelColor=0D0D0F)](https://web3forms.com)
+
+---
+
+### ⚡ React 18 &nbsp;|&nbsp; 🎨 Tailwind CSS &nbsp;|&nbsp; 🖱️ Custom Cursor &nbsp;|&nbsp; 📱 Fully Responsive &nbsp;|&nbsp; 📬 Web3Forms
 
 </div>
 
 ---
 
-## 🧱 Structure
+## 🧱 What's Inside
 ```
 portfolio/
 ├── src/
-│   ├── App.jsx          # Hero · About · Skills · Projects · Experience · Contact
-│   ├── index.css        # Tailwind + custom scroll animations
+│   ├── App.jsx          # All components — Hero, About, Skills, Projects, Experience, Contact
+│   ├── index.css        # Tailwind + custom animations
 │   └── assets/
-│       └── abhishek.png
+│       └── abhishek.png # Profile photo
 ├── public/
 │   ├── index.html
 │   └── favicon.svg      # Custom glassy AK favicon
@@ -40,48 +41,71 @@ portfolio/
 
 ## ✨ Sections
 
-| Section | Highlights |
+| Section | What's there |
 |---|---|
-| **Hero** | Animated name reveal · typewriter roles · live stats |
-| **About** | Staggered fact grid with scroll reveal |
-| **Skills** | Animated progress bars on scroll |
-| **Projects** | CardioScan featured card with live terminal preview |
-| **Experience** | Animated drawing timeline — *The Journey* |
-| **LeetCode** | Live card · Easy 8 · Medium 26 · Hard 17 |
-| **Certifications** | Udemy Full-Stack Bootcamp · Dr. Angela Yu |
-| **Contact** | Web3Forms · messages → Gmail · no backend |
+| **Hero** | Animated name reveal, typewriter roles, stats |
+| **About** | Bio + animated fact grid |
+| **Skills** | Scroll-triggered progress bars |
+| **Projects** | CardioScan featured card + terminal preview |
+| **Experience** | Animated timeline — The Journey |
+| **LeetCode** | Live stats card via jacoblin.cool |
+| **Certifications** | Udemy Full-Stack Bootcamp |
+| **Contact** | Web3Forms — messages go straight to Gmail |
 
 ---
 
-## 🛠️ Stack
+## 🛠️ Tech Stack
 
-| | |
-|---|---|
-| **Frontend** | React 18 · Tailwind CSS · DM Mono · Bebas Neue · Space Grotesk |
-| **Forms** | Web3Forms — 250 free submissions/month |
-| **Deploy** | Netlify — auto-deploy from GitHub |
-| **Fonts** | Google Fonts |
+| Frontend | Tooling | Deploy |
+|---|---|---|
+| React 18 | Create React App | Netlify |
+| Tailwind CSS | PostCSS | — |
+| DM Mono · Space Grotesk · Bebas Neue | Google Fonts | — |
+| Web3Forms | — | — |
 
 ---
 
 ## ⚡ Run Locally
 ```bash
+# Clone
 git clone https://github.com/Abhis1905/Portfolio.git
 cd Portfolio
+
+# Install
 npm install
-npm start        # → localhost:3000
-npm run build    # → /build
+
+# Dev server → localhost:3000
+npm start
+
+# Production build
+npm run build
 ```
+
+---
+
+## 🚀 Deploy
+```bash
+npm run build
+# Drag /build folder to drop.netlify.com
+# OR connect repo to Netlify for auto-deploy on push
+```
+
+---
+
+## 📬 Contact Form
+
+Powered by [Web3Forms](https://web3forms.com) — no backend needed, messages land directly in Gmail. Free up to 250 submissions/month.
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF6B2B&height=80&section=footer" width="100%"/>
+*Full Stack Engineer · Backend · ML · Open Source*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0F)](https://www.linkedin.com/in/1905-abhishek/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0F)](https://github.com/Abhis1905)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF6B2B?style=for-the-badge&labelColor=0D0D0F)](https://1905-abhishek.netlify.app)
 
 Built by **[Abhishek](https://www.linkedin.com/in/1905-abhishek/)**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhishek-0077B5?style=flat-square&logo=linkedin&logoColor=white&labelColor=0D0D0F)](https://www.linkedin.com/in/1905-abhishek/)
-[![GitHub](https://img.shields.io/badge/GitHub-Abhis1905-181717?style=flat-square&logo=github&logoColor=white&labelColor=0D0D0F)](https://github.com/Abhis1905)
 
 </div>
