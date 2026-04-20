@@ -26,6 +26,7 @@ const LinkedinIcon=()=>(<svg width="18" height="18" viewBox="0 0 24 24" fill="cu
 const MailIcon=()=>(<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>);
 const XIcon=()=>(<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>);
 const DiscordIcon=()=>(<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.08.11 18.1.128 18.115a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>);
+const DownloadIcon=()=>(<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>);
 
 function Cursor(){
   const curRef=useRef(null),ringRef=useRef(null),rx=useRef(0),ry=useRef(0),mx=useRef(0),my=useRef(0);
@@ -55,11 +56,29 @@ function SkillBar({name,pct}){
 function Eyebrow({children}){return(<div className="flex items-center gap-3 mb-4"><div className="w-7 h-px bg-[var(--or)]"/><span className="font-mono text-[10px] text-[var(--or)] tracking-[4px] uppercase">{children}</span></div>);}
 function Tag({children}){return <span className="font-mono text-[10px] px-[9px] py-1 border border-[var(--wire)] rounded-sm text-[var(--muted)]">{children}</span>;}
 
+// ─── NAV ─── resume button added next to "Get In Touch"
 function Nav(){
   const links=["About","Skills","Projects","Experience","Leetcode","Certifications","Contact"];
-  return(<nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] h-[60px] bg-[rgba(13,13,15,0.85)] backdrop-blur-xl border-b border-[var(--wire)]"><div className="font-display text-2xl tracking-[3px]">AK<span className="text-[var(--or)]">.</span></div><div className="hidden md:flex gap-7">{links.map(s=>(<a key={s} href={`#${s.toLowerCase()}`} className="nav-link-hover font-mono text-[11px] text-[var(--muted)] hover:text-[var(--or)] no-underline tracking-[1px] transition-colors">{s}</a>))}</div><a href="#contact" className="font-mono text-xs bg-[var(--or)] text-white no-underline px-5 py-2 rounded-sm hover:opacity-90 transition-opacity">Get In Touch</a></nav>);
+  return(
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] h-[60px] bg-[rgba(13,13,15,0.85)] backdrop-blur-xl border-b border-[var(--wire)]">
+      <div className="font-display text-2xl tracking-[3px]">AK<span className="text-[var(--or)]">.</span></div>
+      <div className="hidden md:flex gap-7">{links.map(s=>(<a key={s} href={`#${s.toLowerCase()}`} className="nav-link-hover font-mono text-[11px] text-[var(--muted)] hover:text-[var(--or)] no-underline tracking-[1px] transition-colors">{s}</a>))}</div>
+      <div className="flex items-center gap-3">
+        <a
+          href="/Abhishek_Kumar_Resume.pdf"
+          download="Abhishek_Kumar_Resume.pdf"
+          className="hidden md:flex items-center gap-1.5 font-mono text-[11px] text-[var(--muted)] no-underline border border-[var(--wire)] px-4 py-2 rounded-sm hover:border-[var(--or)] hover:text-[var(--or)] transition-all"
+        >
+          <DownloadIcon/>
+          Resume
+        </a>
+        <a href="#contact" className="font-mono text-xs bg-[var(--or)] text-white no-underline px-5 py-2 rounded-sm hover:opacity-90 transition-opacity">Get In Touch</a>
+      </div>
+    </nav>
+  );
 }
 
+// ─── HERO ─── resume button added after LeetCode button
 function Hero(){
   return(
     <section id="home" className="min-h-screen flex items-center justify-between gap-12 px-[5%] pt-20 pb-16 relative overflow-hidden">
@@ -74,6 +93,14 @@ function Hero(){
           <a href="#projects" className="flex items-center gap-2 bg-[var(--or)] text-white no-underline px-7 py-3 rounded-sm text-sm font-bold hover:opacity-90 transition-all hover:-translate-y-0.5">View Work →</a>
           <a href="https://github.com/Abhis1905" target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-[var(--wire2)] text-[var(--muted)] no-underline px-6 py-3 rounded-sm text-sm hover:border-[var(--or)] hover:text-[var(--or)] transition-all hover:-translate-y-0.5">↗ GitHub</a>
           <a href="https://leetcode.com/u/1905-abhishek/" target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-[var(--wire2)] text-[var(--muted)] no-underline px-6 py-3 rounded-sm text-sm hover:border-[var(--or)] hover:text-[var(--or)] transition-all hover:-translate-y-0.5">↗ LeetCode</a>
+          <a
+            href="/Abhishek_Kumar_Resume.pdf"
+            download="Abhishek_Kumar_Resume.pdf"
+            className="flex items-center gap-2 border border-[var(--wire2)] text-[var(--muted)] no-underline px-6 py-3 rounded-sm text-sm hover:border-[var(--or)] hover:text-[var(--or)] transition-all hover:-translate-y-0.5"
+          >
+            <DownloadIcon/>
+            Resume
+          </a>
         </div>
         <div className="flex gap-0 border-t border-[var(--wire)] pt-8 fade-up" style={{animationDelay:"1.1s"}}>
           {[["3","LIVE PROJECTS"],["98.5%","ML ACCURACY"],["51","DSA SOLVED"]].map(([n,l])=>(<div key={l} className="pr-9 mr-9 border-r border-[var(--wire)] last:border-0 last:mr-0 last:pr-0"><div className="font-display text-[36px] text-[var(--or)] leading-none tracking-[-1px]">{n}</div><div className="font-mono text-[10px] text-[var(--muted)] mt-0.5 tracking-[0.5px]">{l}</div></div>))}
